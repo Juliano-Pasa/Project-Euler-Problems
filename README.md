@@ -2,4 +2,4 @@
 
 My solutions to [Project Euler](https://projecteuler.net/archives) problems done with Python
 
-This is all part of my desire to learn more about Python and some of its tricks
+This is all part of my desire to learn more about Python and some of its tricks and also develop problem solving skills
