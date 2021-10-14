@@ -5,7 +5,7 @@ def fibonacci_even_sum(limit):
     ans = 0
 
     while (new_term < limit):
-        ans += new_term * (new_term % 2 == 0)
+        ans += new_term * (not (new_term % 2))
 
         aux = new_term
         new_term = new_term + prev_term
