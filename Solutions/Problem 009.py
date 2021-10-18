@@ -10,7 +10,7 @@ def find_sum_triplet(total):
 
     aux = 0
     m = 2
-    while m <= (total/2)**0.5: # Biggest number of m so that the sum is lower than total  
+    while m <= (total/2)**0.5: # Biggest value of m so that the sum is lower than total  
         for n in range(m):
             aux = 2*m*(n + m)
             if aux == total:
