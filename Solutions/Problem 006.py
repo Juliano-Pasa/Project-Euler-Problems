@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=6
+
 def calc_diff(limit):
     sum_of_squares = 0
     square_of_sum = 0

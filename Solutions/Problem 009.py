@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=9
+
 def find_sum_triplet(total):
     ''' Function to find pythagorean triples using their sum
 

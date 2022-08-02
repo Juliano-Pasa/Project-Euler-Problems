@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=10
+
 def find_primes_sum(limit): 
     primes = [True] * limit # Sieve of eratosthenes
     primes[0] = primes[1] = False

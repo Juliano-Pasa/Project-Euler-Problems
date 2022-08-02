@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=5
+
 def find_highest_power(num, limit):
     """ Finds the highest power of a number below a limit
 
@@ -6,7 +8,6 @@ def find_highest_power(num, limit):
 
         Returns: 
         int: Highest power of a number below the limit
-
     """
     power = 0
     while num**power < limit:
@@ -23,8 +24,7 @@ def decompose_sequence_factors(limit):
         limit (int): Last number of the sequence not included 
 
         Returns:
-        int: Product of all factors found
-    
+        int: Product of all factors found    
     """
 
     factors = [False] * (limit - 2)

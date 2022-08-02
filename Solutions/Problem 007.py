@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=7
+
 from math import ceil, log
 
 def nth_prime_upper_bound(n):

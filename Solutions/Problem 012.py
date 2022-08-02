@@ -1,3 +1,6 @@
+# https://projecteuler.net/problem=12
+
+
 def countDivisors(num):
     totalDivisors = 1
     count = 1

@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=8
+
 def multiply_adjacent(sequence, largest):
     product = 1
     for i in sequence:

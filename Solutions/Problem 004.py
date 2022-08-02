@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=4
+
 def transform_to_palindrome(num): 
     """ Creates a palindrome by reversing a given number
 
@@ -6,8 +8,6 @@ def transform_to_palindrome(num):
 
         Returns:
         int: A palindrome number with an even number of digits
-
-
     """
 
     new_number = num
@@ -42,8 +42,6 @@ def find_largest_palindrome(limit):
 
         Returns:
         int: Largest palindrome found
-
-
     """
 
     while limit != 0:
