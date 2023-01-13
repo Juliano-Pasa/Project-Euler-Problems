@@ -3,6 +3,7 @@
 
 import math
 import csv
+import os
 
 def readEntry(path):
     with open(path) as csvfile:
@@ -32,7 +33,8 @@ def findGreatest4Product(row):
     return greatestProduct
 
 if __name__ == "__main__":
-    data, size = readEntry("path")
+    path = os.path.dirname(__file__) + "\..\Problems Entries\Problem 011 entry.txt"
+    data, size = readEntry(path)
     greatestProduct = -1
     products = [0, 0, 0, 0, 0, 0]
 

@@ -2,6 +2,7 @@
 
 
 import csv
+import os
 
 def readEntry(path):
     with open(path) as csvfile:
@@ -26,7 +27,8 @@ def sumLastDecimalPlace(numbers, carry):
     return lastDigit, nextCarry
 
 if __name__ == "__main__":
-    data = readEntry("path")
+    path = os.path.dirname(__file__) + "\..\Problems Entries\Problem 013 entry.txt"
+    data = readEntry(path)
     last10Digits = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     j = 0
     carry = 0
