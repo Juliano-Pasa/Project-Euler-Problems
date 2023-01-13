@@ -1,5 +1,6 @@
 # https://projecteuler.net/problem=8
 
+
 def multiply_adjacent(sequence, largest):
     product = 1
     for i in sequence:
@@ -12,7 +13,7 @@ def multiply_adjacent(sequence, largest):
 def find_adjacent_product(data):
     largest_product = 1
 
-    for i in data[:13]: # First 13 adjacent numbers product
+    for i in data[:13]:
         largest_product *= int(i)
 
     i = 0
@@ -20,12 +21,12 @@ def find_adjacent_product(data):
     while i < len(data[13:]):
         if data[i+13] == '0':
             i += 14
-            if i > len(data[13:]): # Index out of range
+            if i > len(data[13:]):
                 return largest_product
             largest_product = multiply_adjacent(data[i:i+13], largest_product)
             total += 1
         
-        if data[i+13] > data[i]: # Only calculate the product if next number is bigger than the last one
+        if data[i+13] > data[i]:
             total += 1
             largest_product = multiply_adjacent(data[i+1:i+14], largest_product) 
         i += 1
@@ -33,7 +34,6 @@ def find_adjacent_product(data):
     return largest_product
 
 if __name__ == "__main__":
-    # Treat number as string
     data = ("73167176531330624919225119674426574742355349194934"
             "96983520312774506326239578318016984801869478851843"
             "85861560789112949495459501737958331952853208805511"

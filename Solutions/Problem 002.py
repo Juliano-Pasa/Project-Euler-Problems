@@ -1,5 +1,6 @@
 # https://projecteuler.net/problem=2
 
+
 def fibonacci_even_sum(limit):
     prev_term = 0
     new_term = 1

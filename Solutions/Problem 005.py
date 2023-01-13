@@ -1,5 +1,6 @@
 # https://projecteuler.net/problem=5
 
+
 def find_highest_power(num, limit):
     """ Finds the highest power of a number below a limit
 
@@ -36,7 +37,7 @@ def decompose_sequence_factors(limit):
     i = 2
     while product != 1: 
         if product % i == 0:
-            factors[i-2] = True # Keeps track of what factors compose the number
+            factors[i-2] = True
             product = product // i
             i -= 1
         i += 1

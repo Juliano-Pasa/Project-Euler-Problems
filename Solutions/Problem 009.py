@@ -1,5 +1,6 @@
 # https://projecteuler.net/problem=9
 
+
 def find_sum_triplet(total):
     ''' Function to find pythagorean triples using their sum
 
@@ -12,7 +13,7 @@ def find_sum_triplet(total):
 
     aux = 0
     m = 2
-    while m <= (total/2)**0.5: # Biggest value of m so that the sum is lower than total  
+    while m <= (total/2)**0.5:
         for n in range(m):
             aux = 2*m*(n + m)
             if aux == total:

@@ -1,5 +1,6 @@
 # https://projecteuler.net/problem=7
 
+
 from math import ceil, log
 
 def nth_prime_upper_bound(n):
@@ -18,7 +19,7 @@ def find_nth_prime(index):
     for p, val in enumerate(primes):
         if val:
             primes[p*2::p] = [False] * len(primes[p*2::p])
-            total += 1 # Keeps track of the number of primes
+            total += 1
 
         if total == index:
             return p
