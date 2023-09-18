@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=26
+
 def FindRecurringCycleLen(n):
     remainders = {}
     index = 0

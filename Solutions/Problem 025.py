@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=25
+
 from logging.handlers import NTEventLogHandler
 import math
 
