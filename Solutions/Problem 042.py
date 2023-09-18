@@ -18,10 +18,12 @@ def readEntry(path):
         return [*map(WordToValue, data)]
 
 def GenerateTriangles(n):
-    result = [1]
+    result = set([1])
+    last = 1
     for i in range(2, n+1):
-        result.append(result[-1] + i)
-    return set(result)
+        result.add(last + i)
+        last += i
+    return result
 
 def CountTriangleWords(data, triangles):
     count = 0
